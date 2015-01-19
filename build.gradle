@@ -1,0 +1,14 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+ext {
+	rxJavaVersion = '1.0.4'
+}
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile "io.reactivex:rxjava:$rxJavaVersion"
+	testCompile 'junit:junit:4.+'
+}
