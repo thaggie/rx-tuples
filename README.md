@@ -7,15 +7,15 @@ While tuples for all FuncX classes have been added if you're using more than 3 a
 
 ##Usage
 When a function needs to return more than one value then a tuple can be used:
-```
+```Java
 	return RxT.create(foo, bar baz);
 ```
 
 When the mutiple values from a function need to be consumed then a function with the same number of arguments is used:
-```
+```Java
 	.map(RxT.with(new Func3<Foo, Bar, Baz, String>() {
 		@Override
-		public int[] call(Foo foo, Bar bar, Baz, baz) {
+		public String call(Foo foo, Bar bar, Baz, baz) {
 			return "" + foo + bar + baz;
 		}
 	}
